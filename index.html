@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS LIST</title>
+    <!-- resest css -->
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="main">
+        <h1>Class Marksheet</h1>
+        <form class="form-wrap">    <!-- tạo form nhập điểm và nút nhấn Nhập -->
+            <div class="input-item">
+                <label for="nameItem">Họ tên</label>
+                <input type="text" name="" id="nameItem" value="" required>
+            </div>
+            <div class="input-item">
+                <label for="mathScore">Điểm toán</label>
+                <input type="text" name="" id="mathScore" value="" required>
+            </div>
+            <div class="input-item">
+                <label for="physicalScore">Điểm lý</label>
+                <input type="text" name="" id="physicalScore" value="" required>
+            </div>
+            <div class="input-item">
+                <label for="chemistryScore">Điểm hóa</label>
+                <input type="text" name="" id="chemistryScore" value="" required>
+            </div>
+    
+            <input type="button" id="nhap" value="Nhập"/>
+        </form>
+
+            <table id="mytable">    <!-- tạo đầu mục của bảng -->
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th> 
+                    <th>Toán</th>
+                    <th>Lý</th>
+                    <th>Hóa</th>
+                    <th>Trung bình</th>
+                    <th><input type="button" id="clearrow" value="Xóa hàng"/></th>  <!-- tạo nút ấn xóa hàng -->
+                </tr>
+            </table>
+
+        <div class="caculates">
+            <div class="button-wrap">
+                <button id="avgCaculate">Tính điểm trung bình</button>    <!-- thêm sự kiện click vào nút nhất sẽ chạy function -->
+                <button id="goodStudent">Xác định học sinh giỏi</button>
+            </div>
+        </div>
+
+    </div>
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
